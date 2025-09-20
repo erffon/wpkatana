@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
     <title><?php bloginfo('name'); ?></title>
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <?php wp_head(); ?>
 </head>
@@ -51,3 +51,61 @@
 
 <!-- site wrapper -->
 <div class="site-wrapper">
+    <div class="main-overlay"></div>
+
+    <!-- header -->
+    <header class="header-default">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xl">
+                <!-- site logo -->
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img
+                            src="<?php echo get_template_directory_uri() . '/assets/images/logo.svg'; ?>"
+                            alt="logo"/></a>
+
+                <div class="collapse navbar-collapse">
+                    <!-- menus -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link " href="index.html">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">صفحات</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="category.html">دسته بندی</a></li>
+                                <li><a class="dropdown-item" href="blog-single.html">جزییات وبلاگ 1</a></li>
+                                <li><a class="dropdown-item" href="blog-single-2.html">جزییات وبلاگ 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تماس با ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">درباره ما</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- header right section -->
+                <div class="header-right">
+                    <!-- social icons -->
+                    <ul class="social-icons list-unstyled list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <!-- header buttons -->
+                    <div class="header-buttons">
+                        <button class="search icon-button">
+                            <i class="icon-magnifier"></i>
+                        </button>
+                        <button class="burger-menu icon-button">
+                            <span class="burger-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
