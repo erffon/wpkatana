@@ -1,3 +1,5 @@
+<?php get_template_part('partials/footer/instagram-feed', 'instagram-feed'); ?>
+
 <!-- footer -->
 <footer>
     <?php wp_footer(); ?>
@@ -6,7 +8,8 @@
             <div class="row d-flex align-items-center gy-4">
                 <!-- copyright text -->
                 <div class="col-md-4">
-                    <span class="copyright">ارائه شده در وب‌سایت <a href="#">راست‌چین</a></span>
+                    <span class="copyright">☕️ ارائه شده توسط  <a
+                                href="https://weblight.agency">وبلایت</a></span>
                 </div>
 
                 <!-- social icons -->

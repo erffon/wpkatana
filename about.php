@@ -1,0 +1,77 @@
+<?php
+/*
+Template Name: about us
+Template Post Type: page
+*/
+
+get_header(); ?>
+
+
+    <!-- page header -->
+    <section class="page-header">
+        <div class="container-xl">
+            <div class="text-center">
+                <h1 class="mt-0 mb-2">درباره ما</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">درباره ما</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- section main content -->
+    <section class="main-content">
+        <div class="container-xl">
+
+            <div class="row gy-4">
+
+
+                <div class="col-lg-8">
+
+                    <div class="page-content bordered rounded padding-30">
+
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/other/about.jpg' ?>"
+                             alt="کاتن" class="rounded mb-4"/>
+
+                        <p>سلام، من یک نویسنده محتوا هستم که مجذوب مطالب مد روز، سلبریتی و سبک زندگی هستم. او به مشتریان
+                            کمک می کند تا محتوای مناسب را برای افراد مناسب بیاورند.</p>
+
+                        <p>رودخانه کوچکی به نام دودن در کنار آنها جریان دارد و مواد غذایی لازم را برای آن تامین می کند.
+                            این کشور بهشتی است که در آن قسمت های برشته جملات در دهان شما پرواز می کند.</p>
+
+                        <p>حتی «اشاره‌گیری» قدرتمند هیچ کنترلی روی متون کور ندارد، این یک زندگی تقریباً غیرمستقل است، یک
+                            روز، یک خط کوچک از متن کور به نام لورم ایپسوم تصمیم گرفت به دنیای دوردست گرامر برود.</p>
+
+                        <p>Big Oxmox به او توصیه کرد که این کار را نکند، زیرا هزاران ویرگول بد، علامت سوال وحشی و
+                            Semikoli گمراه کننده وجود داشت، اما متن کور کوچک گوش نکرد. او هفت ورسالیا خود را بسته بندی
+                            کرد، حرف اول خود را در کمربند گذاشت و خود را در راه قرار داد.</p>
+
+                        <hr class="my-4"/>
+                        <ul class="social-icons list-unstyled list-inline mb-0">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-medium"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <?php get_template_part('partials/sidebar/sidebar-wrapper', 'sidebar-wrapper'); ?>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<?php
+
+get_footer(); ?>

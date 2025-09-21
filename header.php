@@ -77,10 +77,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">تماس با ما</a>
+                            <a class="nav-link" href="contact">تماس با ما</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">درباره ما</a>
+                            <a class="nav-link" href="about">درباره ما</a>
                         </li>
                     </ul>
                 </div>
