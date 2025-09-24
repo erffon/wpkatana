@@ -62,29 +62,23 @@
                             src="<?php echo get_template_directory_uri() . '/assets/images/logo.svg'; ?>"
                             alt="logo"/></a>
 
-                <div class="collapse navbar-collapse">
-                    <!-- menus -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link " href="index.html">صفحه اصلی</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">صفحات</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="category.html">دسته بندی</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">جزییات وبلاگ 1</a></li>
-                                <li><a class="dropdown-item" href="blog-single-2.html">جزییات وبلاگ 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact">تماس با ما</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about">درباره ما</a>
-                        </li>
-                    </ul>
-                </div>
+                <!--                <div class="collapse navbar-collapse">-->
+                <!-- menus -->
+                <?php
+                if (has_nav_menu('top-menu')) {
+                    wp_nav_menu([
+                        'theme_location' => 'top-menu',
+                        'container' => 'div',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id' => 'navbarSupportedContent',
+                        'menu_class' => 'navbar-nav ml-auto',
+                        'depth' => 2,
+                        'fallback_cb' => '__return_false',
+                        'walker' => new Katen_Bootstrap_Navwalker(),
+                    ]);
+                }
 
+                ?>
                 <!-- header right section -->
                 <div class="header-right">
                     <!-- social icons -->
@@ -108,4 +102,5 @@
                 </div>
             </div>
         </nav>
+
     </header>
