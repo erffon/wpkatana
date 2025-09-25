@@ -24,7 +24,7 @@
                     </h2>
                     <ul class="meta list-inline mb-0">
                         <li class="list-inline-item"><a href="#"><?php the_author(); ?></a></li>
-                        <li class="list-inline-item"><?php the_date(); ?></li>
+                        <li class="list-inline-item"><?php echo get_the_date(); ?></li>
                     </ul>
                 </div>
                 <a href="sample1/">
@@ -34,5 +34,6 @@
                 </a>
             </div>
         <?php endwhile;
-    endif; ?>
+    endif;
+    wp_reset_query(); ?>
 </div>
