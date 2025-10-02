@@ -100,7 +100,7 @@ the_post();
                 <?php if (comments_open(get_the_ID())): ?>
                     <?php comments_template('', true); ?>
                 <?php endif; ?>
-                
+
 
             </div>
             <?php endwhile;
@@ -109,6 +109,7 @@ the_post();
             <div class="col-lg-4">
 
                 <?php get_template_part('partials/sidebar/sidebar-wrapper', 'sidebar-wrapper'); ?>
+                
 
             </div>
 

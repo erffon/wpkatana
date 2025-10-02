@@ -1,12 +1,12 @@
 <?php
 
-function ktn_register_sidebar_init()
+function ktn_register_sidebar_widget()
 {
 
     register_sidebar(array(
         'name' => 'سایدبار قالب',
-        'id' => 'sidebar',
-        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'id' => 'sidebar-1',
+        'before_widget' => '<li id="%1$s" class="%2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h2 class="widget_title">',
         'after_title' => '</h2>',
@@ -16,4 +16,4 @@ function ktn_register_sidebar_init()
     }
 }
 
-add_action('widgets_init', 'ktn_register_sidebar_init');
+add_action('widgets_init', 'ktn_register_sidebar_widget');
