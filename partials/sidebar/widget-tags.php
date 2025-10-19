@@ -6,10 +6,8 @@
              class="wave" alt="wave"/>
     </div>
     <div class="widget-content">
-        <a href="#" class="tag">#پرطرفدار</a>
-        <a href="#" class="tag">#فیلم</a>
-        <a href="#" class="tag">#ویژه</a>
-        <a href="#" class="tag">#گالری</a>
-        <a href="#" class="tag">#سلبریتی</a>
+        <?php
+        dynamic_sidebar('sidebar-3');
+        ?>
     </div>
 </div>

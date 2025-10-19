@@ -13,13 +13,14 @@ class Ktn_Recent_Posts_Widget extends WP_Widget
     public function widget($args, $instance)
     {
         $args = array(
-            'posts_per_page' => !empty($instance['number']) ? $instance['number'] : 3,
+            'posts_per_page' => !empty($instance['count']) ? $instance['count'] : 3,
             'post_status' => 'publish',
             'orderby' => 'date',
             'order' => 'DESC',
             'post_type' => 'post',
         );
         $the_query = new WP_Query($args);
+
 
         ?>
         <div class="widget-content">
@@ -69,7 +70,8 @@ class Ktn_Recent_Posts_Widget extends WP_Widget
     public function update($new_instance, $old_instance)
     {
         $instance = array();
-        $instance['count'] = (!empty($new_instance['count'])) ? $new_instance['count'] : 3;
+        $instance['count'] = (!empty($new_instance['count'])) ? sanitize_text_field($new_instance['count']) : 3;
+        return $instance;
     }
 }
 

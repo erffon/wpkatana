@@ -8,3 +8,4 @@ include_once 'inc/comments/comments-list.php';
 include_once 'inc/widget/register-sidebar-widget.php';
 include_once 'inc/widget/introduction-widget.php';
 include_once 'inc/widget/recent-posts-widget.php';
+include_once 'inc/widget/post-tags-widget.php';
