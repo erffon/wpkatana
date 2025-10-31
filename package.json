@@ -1,0 +1,28 @@
+{
+  "name": "katen",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/erffon/wpkatana#readme",
+  "bugs": {
+    "url": "https://github.com/erffon/wpkatana/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erffon/wpkatana.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass assets/css/style.scss assets/css/style.css --style=compressed",
+    "watch:css": "sass --watch assets/css/style.scss:assets/css/style.css"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

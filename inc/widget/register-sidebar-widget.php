@@ -27,6 +27,15 @@ function ktn_register_sidebar_widget()
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
+    register_sidebar([
+        'name' => 'ویجت دسته بندی‌ها',
+        'id' => 'sidebar-4',
+        'before_widget' => '<div id="%1$s" class=" %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-header text-center"><h3 class="widget-title">',
+        'after_title' => '</h3><img src="' . esc_url(get_template_directory_uri() . '/assets/images/wave.svg') . '" class="wave" alt="wave"></div>',
+    ]);
+
 
 }
 
